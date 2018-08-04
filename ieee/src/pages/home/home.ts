@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ConstantsProvider } from '../../providers/constants/constants';
 
 /**
  * Generated class for the HomePage page.
@@ -14,16 +15,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'home.html',
 })
 export class HomePage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  pushPage:any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, constants:ConstantsProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
   addNewPlace(){
-    console.log('entered')
-    this.navCtrl.push('NewLocationPageModule')
+    this.navCtrl.push('NewLocationPage');
   }
 
 }
