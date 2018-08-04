@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ConstantsProvider } from '../../providers/constants/constants';
 
 /**
  * Generated class for the ListPage page.
@@ -16,7 +15,7 @@ import { ConstantsProvider } from '../../providers/constants/constants';
 })
 export class ListPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,constants:ConstantsProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {

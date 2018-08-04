@@ -6,7 +6,6 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ConstantsProvider } from '../providers/constants/constants';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { ConstantsProvider } from '../providers/constants/constants';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ConstantsProvider
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
