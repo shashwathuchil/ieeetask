@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+
 /**
  * Generated class for the HomePage page.
  *
@@ -14,7 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'home.html',
 })
 export class HomePage {
-
+  pushPage:any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -22,8 +23,7 @@ export class HomePage {
     console.log('ionViewDidLoad HomePage');
   }
   addNewPlace(){
-    console.log('entered')
-    this.navCtrl.push('NewLocationPageModule')
+    this.navCtrl.setRoot('NewLocationPage');
   }
 
 }
